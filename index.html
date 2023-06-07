@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="resources/icon.png" type="image/x-icon">
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="index.css">
+   <title>Blog App</title>
+</head>
+<body>
+   <section class="blog-app">
+      <div class="container">
+         <div class="blog-app__inner">
+            <div class="blog-app__col js-btn_disabled">
+               <h1>Новый пост</h1>
+               <div class="post-creating">
+                  <textarea class="js-post-title-input post-title-input" type="text" placeholder="Заголовок" rows="2"></textarea>
+                  <span class="js-title-validation title__validation">Осталось 100 символов для заголовка</span>
+                  <textarea class="js-post-text-input post-text-input" type="text" placeholder="Напиши пост" rows="6"></textarea>
+                  <span class="js-text-validation title__validation">Осталось 200 символов для текста поста</span>
+                  <button class="js-new-post-btn new-post-btn" disabled = 'disabled'>Опубликовать</button>
+                  <button class="js-reset-post-btn reset-post-btn">
+                     Очистить блог
+                  </button>
+               </div>
+            </div>
+            <div class="blog-app__col">
+                  <h2>Лента</h2>
+                  <div class="js-posts posts">Тут пока пусто ...</div>
+            </div>
+         </div>
+      </div>
+   </section>
+   
+   <script src="index.js"></script>
+</body>
+</html>
